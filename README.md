@@ -5,7 +5,7 @@ Task 1:
   1. Create a git repository for the week with a good Readme
   2. Git version control
   3. CI/CD with Github Actions
-  4. Perform Exploratory Data Analysis (EDA) analysis on the following:
+  4. Perform Exploratory Data Analysis (EDA) analysis on the following: \\
       o	 Data Summarization:
           	Descriptive Statistics: Calculate the variability for numerical features such as TotalPremium, TotalClaim, etc.
           	Data Structure: Review the dtype of each column to confirm if categorical variables, dates, etc. are properly formatted.
