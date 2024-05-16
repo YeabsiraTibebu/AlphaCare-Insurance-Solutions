@@ -9,6 +9,14 @@ class descriptive_statistics:
         numerical_stats = df[numerical_cols].describe()
         return numerical_stats
 
+    def summarize_categorical(df):
+        categorical_cols = df.select_dtypes(incude=['object', 'category']).columns.tolist()
+        categorical_summary = {}
+        for col in categorical_cols:
+            categorical_summary[col] = df[col].value_counts()
+        return categorical_summary
+        
+    
     def fix_outlier(df, column):
         df[column] = np.where(df[column] > df[column].quantile(0.95), df[column].median(), df[column])
         return df[column]
