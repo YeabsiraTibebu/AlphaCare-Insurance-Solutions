@@ -70,13 +70,13 @@ class descriptive_statistics:
 
 # def find_agg(df: pd.DataFrame, agg_column: str, agg_metric: str, col_name: str, top: int, order=False) -> pd.DataFrame:
 #     new_df = df.groupby(agg_column)[agg_column].agg(agg_metric).reset_index(name=col_name). \
-#         sort_values(by=col_name, ascending=order)[:top]
+#     sort_values(by=col_name, ascending=order)[:top]
 #     return new_df
 
 
 #def convert_bytes_to_megabytes(df, bytes_data):
   #  megabyte = 1 * 10e+5
   #  df[bytes_data] = df[bytes_data] / megabyte
-   # return df[bytes_data]
+    # return df[bytes_data]
 
 
