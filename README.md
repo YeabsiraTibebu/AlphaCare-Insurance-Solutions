@@ -29,4 +29,9 @@ Task 2:
   5. Commit changes to version control
   6. Push Data to local Remote
 
+Task 3:
+  1. Select Metrics:- Choose the key performance indicator (KPI) that will measure the impact of the features being tested
+  2. Data segmentation
+      o	Control Group: Plans 
+
 
