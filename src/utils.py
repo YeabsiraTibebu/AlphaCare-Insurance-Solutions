@@ -4,6 +4,28 @@ import scipy.stats
 from scipy.stats import zscore
 
 class descriptive_statistics:
+    
+    def scaler(method, data, columns_scaler):
+        if method == 'standartScaler':
+            Standard = StandardScaler()
+            df_standard = data.copy()
+            df_standard[columns_scaler]=Standard.fit_transform(df_standard[columns_scaler])        
+            return df_standard
+        
+        elif method == 'minMaxScaler':        
+            MinMax= MinMaxScaler()
+            df_minmax = data.copy()
+            df_minmax[columns_scaler]=MinMax.fit_transform(df_minmax[columns_scaler])        
+            return df_minmax
+    
+        elif method =='npLog':        
+            df_nplog = data.copy()
+            df_nplog[columns_scaler]=np.log(df_nplog[columns_scaler])        
+            return df_nplog
+    
+        elif method == 'default':
+
+            return data
     def describe_numerical(df):
         numerical_cols = df.select_dtypes(include=np.number).columns.tolist()
         numerical_stats = df[numerical_cols].describe()
